@@ -66,6 +66,9 @@ downloader.run(
 
 ```
 
+You can find the files under './data/'. 
+You can use it to download ISD, ISD Lite, GSOD, IGRA2 or IGRA2 Derived data from NOAA.
+
 Developing
 --------------------------------
 Testing scripts have not been implemented yet.
