@@ -11,4 +11,7 @@ setup(name='abura',
       url='https://github.com/coeusite/abura',
       packages=['abura',],
       package_dir={'abura': 'src'},
+      install_requires=[
+        "wget>=3.2",
+        ],
       )
