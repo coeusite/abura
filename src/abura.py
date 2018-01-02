@@ -23,6 +23,7 @@ class Abura_Base(object):
         self.stations = []
         self.urls = []
         self.years = DEFAULT_YEARS
+        self.data_folder = 'data/'
         return
 
     def wget(self, url, file_path, force_refresh=False):
@@ -76,6 +77,9 @@ class Abura_Base(object):
         # years
         if years is not None:
             self.set_years(years)
+        # check output folder 不存在时自动创建
+        if not os.path.isdir(self.data_folder):
+            os.makedirs(self.data_folder)
         # Part 1: Parse URLs
         self.parse_urls()
         # Part 2: Download files
