@@ -6,18 +6,18 @@ Installing
 If you're a python and pip user, you can install the current development version with:
 
 ```
-sudo pip install git+https://github.com/coeusite/climate_data_downloader.git
+sudo pip install git+https://github.com/coeusite/abura.git
 ```
 
 or install it locally with:
 
 ```
-pip install --user git+https://github.com/coeusite/climate_data_downloader.git
+pip install --user git+https://github.com/coeusite/abura.git
 ```
 
 To upgrade the parser:
 ```
-pip install --user --force-reinstall --upgrade git+https://github.com/coeusite/climate_data_downloader.git
+pip install --user --force-reinstall --upgrade git+https://github.com/coeusite/abura.git
 ```
 
 Dependency
@@ -34,7 +34,7 @@ Using
 Using the module should be pretty straightforward. Here's an example:
 ```
 
-from src import Abura_IGRA2
+from abura import Abura_IGRA2
 # IGRA2 Downloader
 downloader = Abura_IGRA2('IGRA2')
 downloader.run(
@@ -45,7 +45,7 @@ downloader = Abura_IGRA2('IGRA2 DRVD')
 downloader.run(
     stations = ['CHM00056294']) # ChengDu
 
-from src import Abura_ISD
+from abura import Abura_ISD
 # ISD Downloader
 downloader = Abura_ISD('ISD')
 downloader.run(
