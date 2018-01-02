@@ -23,11 +23,7 @@ pip install --user --force-reinstall --upgrade git+https://github.com/coeusite/a
 Dependency
 ------------------------------
 This module depends on:
-* pandas (0.18.1)
-* numpy (1.11.1)
-
-Please update these packages to the latest edition.
-
+* wget
 
 Using
 ------------------------------
@@ -73,6 +69,9 @@ Developing
 --------------------------------
 Testing scripts have not been implemented yet.
 
+Notes
+--------------------------------
+- auto retry infinitely when 530 error occurs (Maximum number of connections exceeded).
 
 Contact
 --------------------------------
